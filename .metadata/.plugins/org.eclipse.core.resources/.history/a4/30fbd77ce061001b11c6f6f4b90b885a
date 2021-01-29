@@ -1,0 +1,53 @@
+class bankAccount{
+    private int accNo;
+    private String name;
+    private double bal;
+    
+    //Add, Modify, remove
+    //Setter / Mutator methods
+    public void setAccNo(int no) 
+    {
+        accNo = no;
+    }
+    
+    //Fetch data
+    //Getter / Accessor methods
+    public int getAccNo() 
+    {
+        return accNo;
+    }
+ 
+    public String getName() {
+        return name;
+    }
+ 
+    public void setName(String name) {
+        this.name = name;
+    }
+ 
+    public double getBal() {
+        return bal;
+    }
+ 
+    public void setBal(double bal) {
+        this.bal = bal;
+    }
+    
+}
+
+public class part2A {
+	public static void main(String[] args) {
+		bankAccount ba = new bankAccount();
+		
+		
+		ba.setAccNo(100);
+		ba.setName("veena");
+		ba.setBal(1000);
+		ba.setAccNo(1000);
+		System.out.println("Customer - " + ba.getName());
+		System.out.println("Account # - " + ba.getAccNo());
+		System.out.println("Balance - " + ba.getBal());
+	}
+		
+	
+}
