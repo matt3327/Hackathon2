@@ -13,17 +13,17 @@ public class part2B {
 			{
 				if(marks[i] < marks[j])
 				{
-					//Organizing Marks
+					//sorting the Marks
 					int temp = marks[i];
 					marks[i] = marks[j];
 					marks[j] = temp;
 					
-					//Organizing SId
+					//sorting the Ids 
 					int tempSId = studentId[i];
 					studentId[i] = studentId[j];
 					studentId[j] = tempSId;
 					
-					//Organizing name
+					//sorting the names
 					String tempN = name[i];
 					name[i] = name[j];
 					name[j] = tempN;
@@ -35,7 +35,7 @@ public class part2B {
 		
 		for(int i=0; i<5;i++)
 		{
-			System.out.println("Name - "+ name[i] + " -> Student ID - "+ studentId[i] + " -> Marks - " + marks[i]);
+			System.out.println("Name -> "+ name[i] + " |Student ID -> "+ studentId[i] + " |Marks > " + marks[i]);
 		}
 	}
 
